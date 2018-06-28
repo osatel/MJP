@@ -88,8 +88,8 @@ public class ResturanteBeiji // Main - Procedure phase
         + "\nCorrect?");
 
         // Table phase
-
-        // Food
+        
+        // Food (price list)
 
         // Bill
 
