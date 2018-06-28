@@ -36,10 +36,10 @@ class Customer // 1:
         String customerName = ""; 
         System.out.println("Enter your lastname:\n");
         customerName = input.nextLine(); 
-        return String
+        return customerName;
     }
 
-    public void checkAlchohol() // Alcohol allowed or not
+    public boolean checkAlchohol() // Alcohol allowed or not
     {
         boolean alchohol = false; // Control
         boolean loop1 = true; // Loop 1 
@@ -76,11 +76,24 @@ class Table // 2: Tables empty and not, and reserve
 }
 
 
-public class ResturanteBeiji // Main 
+public class ResturanteBeiji // Main - Procedure phase 
 {
     public static void main(String[] args) 
     {
+        // Customer phase
+        String name = Customer.fillName();
+        Boolean alcohol = Customer.checkAlchohol();
+        Customer c = new Customer(name, alcohol);
+        System.out.println("Your name is: " + Customer.getName() 
+        + "\nCorrect?");
 
-        Customer c = new Customer(customerName, 2);
+        // Table phase
+
+        // Food
+
+        // Bill
+
+        // Rating
+        
     }
 }
