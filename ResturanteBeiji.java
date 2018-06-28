@@ -8,31 +8,28 @@ class InvalidArgumentException extends Exception
     }
 } */ 
 Scanner input = new Scanner(System.in); // Scanner 
-class Customer // 1:
-{
+
+class Customer { // 1:
     // Variables 
     private String name;
     private boolean above18;
 
     // Constructor 
-    public Customer(String na, int a, boolean ab)
-    {
+    public Customer(String na, int a, boolean ab) {
         name = na;
         above18 = ab;
     }
 
     // Methods
-    public void setName(String n) 
-    {
-        name = n;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getName() 
-    {
+
+    public String getName() {
         return name;
     }
     
-    public void fillName() // Who is customer
-    {
+    public void fillName() { // Who is customer 
         String customerName = ""; 
         System.out.println("Enter your lastname:\n");
         customerName = input.nextLine(); 
@@ -68,12 +65,6 @@ class Customer // 1:
 
 }
 
-class Table // 2: Tables empty and not, and reserve
-{
-    int tableNumber;
-    int seats;
-
-}
 
 
 public class ResturanteBeiji // Main - Procedure phase 
